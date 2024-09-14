@@ -1,0 +1,72 @@
+---
+import {
+  StickyTextImageSection,
+	Button,
+} from '@littlesticks/odyssey-theme-components';
+import Layout from '../../layouts/Page.astro';
+
+const seo = {
+	title: 'Genomics | Genome analysis',
+	description: 'Genomics | Genome analysis',
+};
+---
+
+<Layout seo={seo} >
+  <StickyTextImageSection>
+    <div slot="text-container">
+	  We routinely perform genomics analysis for WGS and WES.
+	  We ensure data quality through comprehensive quality control and testing, and use a 
+	  robust toolchain for variant and mutation calling. In addition to standard processing, 
+	  we provide functional characterization of the data, including annotations, 
+	  QWAS, eQTL, mutation rate  as well enrichment analysis.
+	  We also offer advanced options such as machine learning on these data-sets and integration 
+	  with other omics.
+
+      <h3>WGS and WES analysis</h3>
+      <p>
+		WGS and WES are powerful techniques for studying the genetic makeup of organisms. 
+		WGS provides a comprehensive view of an organism's genome and can be used to study genetic 
+		variation, including single nucleotide variations, insertion, and deletions. 
+		It can also be used to study structural variations such as copy number variations, 
+		and also detect chromosomal abnormalities. WES, on the other hand, 
+		targets the protein-coding regions of the genome and thus is an efficient way to study 
+		genetic variations that result in protein changes.
+      </p>
+
+      <h3>Genome-wide association studies</h3>
+        <p>
+		GWAS involve scanning the entire genome of many individuals to identify common genetic 
+		variations (SNPs) that are associated with a specific trait or disease. The goal is to 
+		identify variations that are more common in individuals with the trait or disease, 
+		which could be potential causal genetic factors. They are typically used to study common, 
+		complex diseases such as cancer, heart disease, and diabetes.
+
+      </p>
+
+	  <h3>Qunatitative loci analysis</h3>
+	  <p>
+		QTL analysis can be used to study the genetic basis of complex traits in humans and model
+		 organisms such as mice. It typically involves studying the genetic variation 
+		 in a population of individuals and comparing that to the variation in the trait of interest. 
+		 The goal is to identify genetic variations, or loci, that are associated with the trait. 
+		 QTL analysis can be applied using different approaches, such as linkage mapping or 
+		 association mapping, and it can also be combined with other tools such as GWAS, to 
+		 identify the genetic and molecular basis of complex traits. 
+	</p>
+	<h3>Mutation signature analysis</h3>
+	  <p>
+		Mutation signature analysis allows for the identification and 
+		characterization of the underlying mutational processes that have contributed to the genetic 
+		variability of a given sample. This is done by evaluating the patterns of mutations within a 
+		genome and using this information to infer the underlying molecular mechanisms that have led 
+		to these mutations. The main goal of mutation signature analysis is to identify and quantify 
+		the different types of mutations that occur in a sample, and to understand the processes that
+		 have caused them. 
+	</p>
+
+    </div>
+
+  </StickyTextImageSection>
+
+
+</Layout>

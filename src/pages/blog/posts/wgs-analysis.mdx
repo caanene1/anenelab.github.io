@@ -1,0 +1,49 @@
+---
+layout: '../../../layouts/Post.astro'
+title: WGS analysis
+description: Description of the WGS analysis process.
+publishDate: Feburary 6, 2023
+featuredImage: '/assets/images/blog/sequence/wgs.jpg'
+excerpt: 'RNA-Seq is a powerful tool for studying the transcriptome and investigating gene expression.
+ The analysis process typically consists of several key steps, including sample preparation, 
+ sequencing, quality control, alignment, quantification, and downstream analysis, which only process one type of data.' 
+tags: ['DNA-Seq', 
+       'Sequencing']
+---
+
+Whole genome sequencing (WGS)  provides a high-resolution view of an organism's genetic material, 
+enabling the identification of genetic variations, including single nucleotide polymorphisms (SNPs),
+ insertions, deletions, copy number variations (CNVs), and structural variations (SVs).
+
+The WGS analysis process typically involves several key steps, including sample preparation, 
+sequencing, quality control, assembly, variant calling, and annotation.
+
+- **Sample Preparation**: WGS starts with the preparation of DNA from cells or tissue. This can be
+ performed using standard DNA extraction methods, such as phenol-chloroform extraction or commercial
+  kits. The DNA is then subjected to quality control, which includes assessment of DNA concentration,
+   purity, and integrity. 
+
+- **Sequencing**: After the DNA has been prepared, it is subjected to high-throughput sequencing. 
+The most common sequencing platforms for WGS are **Illumina**, **PacBio**, and **Oxford Nanopore**. 
+
+- **Quality Control**: After sequencing, quality control steps are performed to assess the quality 
+of the sequencing data and to remove low-quality reads and contaminants. Tools such as **FastQC**
+and **Qualimap** can be used for this purpose.  
+
+- **Alignment/Assembly**: The next step is to align the sequencing reads to a reference genome or 
+assemble the sequencing reads into a contiguous representation of the 
+genome, known as a genome assembly. Popular alignment tools for DNA-Seq include **BWA** and **Bowtie2**. 
+Assembly requires the use of specialized software, such as **SPAdes**,
+or **SOAPdenovo**. The quality of the assembly is assessed using tools such as **BUSCO** and **QUAST**. 
+
+- **Variant Calling**: Once the genome assembly has been generated, the next step is to call variants, 
+including SNPs, indels, CNVs, and SVs. Variant calling can be performed using a variety of tools, 
+including **GATK**, **Samtools**, and **VarScan**. 
+
+- **Annotation**: After variant calling, the variants can be annotated, which involves the assignment of 
+functional information to the variants. Annotation can be performed using tools such as **ANNOVAR**, 
+*8snpEff**, and **MAKER**. 
+
+WGS requires a strong understanding of molecular biology, genetics, and computational biology, 
+and is typically performed by trained professionals with expertise in these areas.
+

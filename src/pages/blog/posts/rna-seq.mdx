@@ -1,0 +1,53 @@
+---
+layout: '../../../layouts/Post.astro'
+title: RNA-Seq analysis
+description: Gene expression anlysis by RNA-Seq.
+publishDate: Feburary 5, 2023
+featuredImage: '/assets/images/blog/sequence/rna-seq.jpg'
+excerpt: 'RNA-Seq is a powerful tool for studying the transcriptome and investigating gene expression.
+ The analysis process typically consists of several key steps, including sample preparation, 
+ sequencing, quality control, alignment, quantification, and downstream analysis, 
+ which only process one type of data.'
+tags: ['RNA-Seq', 
+       'Sequencing']
+---
+
+RNA-Seq is a widely used high-throughput sequencing technology that provides a comprehensive and 
+quantitative view of the transcriptome, which is the collection of all RNA molecules, including 
+messenger RNA (mRNA), ribosomal RNA (rRNA), and transfer RNA (tRNA), in a cell or tissue. 
+RNA-Seq has revolutionized the study of gene expression, providing a powerful tool for 
+investigating the function of genes, identifying alternative splicing events, and 
+exploring transcriptome diversity in a wide range of organisms.
+
+The RNA-Seq analysis process typically consists of several key steps, including:
+
+- **Sample Preparation**: RNA-Seq starts with the isolation of total RNA from cells or tissue. It is 
+important to remove ribosomal RNA, as it makes up most of the total RNA and does not provide 
+useful information about gene expression. This is typically accomplished using ribosomal RNA 
+depletion kits.
+
+- **Sequencing**: After the RNA has been isolated and depleted of ribosomal RNA, it is reverse transcribed 
+to complementary DNA (cDNA), which is then fragmented and subjected to high-throughput sequencing.
+ The most common sequencing platforms for RNA-Seq are **Illumina**, **PacBio**, and **Oxford Nanopore**.
+
+- **Quality Control**: After sequencing, quality control steps are performed to assess the quality of the
+ sequencing data and to remove low-quality reads and contaminants. Tools such as **FastQC** and 
+ **Qualimap** can be used for this purpose.
+
+- **Alignment**: The next step is to align the sequencing reads to a reference genome or transcriptome.
+ This step is critical for the accurate quantification of gene expression levels. 
+ Popular alignment tools for RNA-Seq include **HISAT2** and **STAR**.
+
+- **Quantification**: Once the reads have been aligned, the expression levels of genes or transcripts 
+can be quantified. There are several methods for quantifying gene expression, including counting 
+reads, using statistical models, or using a combination of both. Popular tools for quantification 
+include **HTSeq** and **featureCounts**.
+
+- **Downstream Analysis**: After quantification, the data can be subjected to a wide range of 
+downstream analyses, including differential expression analysis, pathway analysis, and 
+gene set enrichment analysis. These analyses can be performed using tools 
+such as **DESeq2**, **EdgeR** and **limma-Voom**.
+
+RNA-Seq provides a comprehensive and quantitative view of the transcriptome, enabling the discovery
+ of new genes and alternative splicing events, and the investigation of transcriptome diversity in a 
+ wide range of organisms. 

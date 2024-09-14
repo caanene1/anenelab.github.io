@@ -1,0 +1,81 @@
+---
+import {
+  StickyTextImageSection,
+	Button,
+} from '@littlesticks/odyssey-theme-components';
+import Layout from '../../layouts/Page.astro';
+
+const seo = {
+	title: 'Transcriptomics | Transcriptome analysis',
+	description: 'Transcriptomics | Transcriptome analysis',
+};
+---
+
+<Layout seo={seo} >
+  <StickyTextImageSection>
+    <div slot="text-container">
+	  We routinely perform Transcriptomics analysis for RNA-Seq (bulk and single cell).
+	  We ensure data quality through comprehensive quality control and testing, and use a 
+	  robust toolchain for all downstream analysis. In addition to standard processing, 
+	  we provide functional characterization of genes, including enrichments of biological 
+	  pathways and gene ontology terms, as well as protein-protein interaction networks. 
+	  We also provide machine learning options on these data-sets.
+
+      <h3>Gene expression and splicing</h3>
+      <p>Gene expression is the process by which genetic information is turned into 
+		functional products such as proteins or non-coding RNA. Analysis of gene 
+		expression involves comparing RNA expression levels across the transcriptome 
+		or within specific panels. By identifying differentially expressed genes,
+		 we can understand the molecular basis of healthy and disease conditions and 
+		their corresponding phenotypes. 
+      </p>
+      <h3>Ribosome Profiling</h3>
+        <p>
+			The translation of RNA into functional proteins is a crucial step in gene expression.
+			Ribosome profiling is the method of choice for investigating translation regulation. 
+			It is a sequencing-based technique that takes advantage of the fact that a translating 
+			ribosome protects about 30 nucleotides of the RNA. We offer comprehensive analysis of 
+			ribosome profiling data, including differential translation efficiency, footprint length 
+			distribution, codon occupancy, pausing and frameshift detection. 
+
+      </p>
+      <h4>Nascent RNA abundance</h4>
+        <p>
+		Nascent RNA abundance refers to the measurement of newly synthesized RNA molecules that 
+		are present in a cell at a given time. This can be done through techniques such as 
+		ribosome profiling, which enables the quantification of the amount of RNA that is 
+		associated with ribosomes, and thereby being actively translated into proteins. 
+		Nascent RNA abundance can provide information about the rate of gene expression 
+		and the relative importance of different genes in a cell or tissue. It also can 
+		give insight into the stability of different transcripts, understanding of the 
+		processes controlling gene expression and help in identifying potential targets 
+		for disease treatment. 
+      </p>
+
+	  <h3>RNA-protein interactions</h3>
+	  <p>
+		RNA-protein interactions are fundamental to many cellular processes, including gene 
+		expression and regulation. They involve the binding of RNA molecules to specific proteins, 
+		which can affect various aspects of RNA metabolism including stability, translation, 
+		localization, and degradation. RNA-protein interactions are mediated by specific 
+		structural and sequence motifs on both the RNA and the protein, and can be studied 
+		using various experimental techniques such as protein-RNA pull-downs, RNA-seq, and 
+		crosslinking-immunoprecipitation (CLIP) among others.
+	</p>
+	<h3>RNA modifications</h3>
+	  <p>
+		RNA modifications refer to the chemical modifications that can occur on the nucleotides of 
+		RNA molecules. These modifications can occur on both the coding and non-coding regions of 
+		RNA, and can affect various aspects of RNA metabolism. Some examples of common RNA 
+		modifications include methylation, pseudouridylation, and ribosylation. 
+		These modifications can be studied using high-throughput sequencing, 
+		following specialised treatment of RNAs.
+	</p>
+
+    </div>
+
+  </StickyTextImageSection>
+
+
+</Layout>
+

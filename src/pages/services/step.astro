@@ -1,0 +1,73 @@
+---
+import {Icon} from 'astro-icon'
+import {
+  StickyTextImageSection,
+	Button,
+} from '@littlesticks/odyssey-theme-components';
+import Layout from '../../layouts/Page.astro';
+
+const seo = {
+	title: 'Steps | Our process',
+	description: 'Steps | Our process',
+};
+---
+
+<Layout seo={seo} >
+  <StickyTextImageSection>
+    <div slot="text-container">
+      <h2>Our process</h2>
+      <h3>Understand</h3>
+      <p>
+		<ul>
+			<li>Get to know each other</li>
+			<li>Understand the biology and experimental details</li>
+			<li>Discuss time and cost estimates</li>
+		  </ul>
+      </p>
+      <h3>Plan</h3>
+        <p>
+			<ul>
+				<li>Assign project manager</li>
+				<li>Arrange and transfer data or access</li>
+				<li>Create a project roadmap and update points</li>
+			  </ul>
+      </p>
+      <h3>Analysis</h3>
+        <p>
+			<ul>
+				<li>Perform analysis</li>
+				<li>Output project specifc results</li>
+				<li>Present and interpret results</li>
+				<li>Define data-deriven additions</li>
+			  </ul>
+      </p>
+	  <h3>Conclude</h3>
+	  <p>
+		<ul>
+			<li>Define final outputs</li>
+			<li>Hand over data, results and summary report</li>
+			<li>Send comprehensive methods description</li>
+			<li>Support manuscript preparation</li>
+		  </ul>
+	</p>
+    
+	<Button href="/company/contact" customIcon
+		>Request a Consultation<Fragment slot="icon">
+  <Icon name="ic:baseline-chevron-right"/>
+  </Fragment></Button>
+    </div>
+
+
+     <picture slot="image-container">
+      <img
+        src="/assets/images/home/roadmap.jpg"
+        alt="Road map"
+        loading="lazy"
+      />
+    </picture>
+  </StickyTextImageSection>
+
+	
+
+</Layout>
+

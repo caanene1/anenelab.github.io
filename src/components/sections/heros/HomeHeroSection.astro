@@ -1,0 +1,84 @@
+---
+import { Icon } from 'astro-icon';
+import { Container, Button } from '@littlesticks/odyssey-theme-components';
+import settings from '../../../config/settings.js';
+import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
+---
+
+<Container>
+	<section class="hero-section__section">
+		<div class="hero-section__text">
+				<h1>Welcome to BiOzi</h1>
+				<h3>Your partner in data discovery.</h3>
+				<p>
+					We unlock the full potential of your biological 
+					data using cutting-edge computational tools and techniques. Our project-centred 
+					process is designed for all research stages, from start to finish. 
+					With our range of services and resources, including data analysis, tooling, tutorials, webinars, 
+					and technical support, you will be able to:
+
+                    <li>Achieve unparalleled insights from complex datasets</li>
+                    <li>Visualise and communicate your results effectively</li>
+                    <li>Make confident data-driven decisions</li>
+			    </p>
+				<p>       </p>
+				<h4>Let's get started!</h4>
+				<div class="hero-btns__container">
+					<Button href="/company/contact" customIcon
+						>Request a Consultation
+            <Fragment slot="icon">
+              <Icon name="ic:baseline-chevron-right"/>
+            </Fragment>
+            </Button>
+            </div>
+        {settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
+		</div>
+		<div class="hero-section__image">
+				<picture>
+					<img
+						src="/assets/images/home/dna-helix.jpg"
+						alt="biozi home"
+						id="home-hero-image"
+					/>
+				</picture>
+		</div>
+	</section>
+</Container>
+
+<style>
+	.hero-section__section {
+		margin: var(--section-margin) auto;
+		min-height: clamp(90vh, 100vw, calc(100vh - var(--navbar-height)));
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		align-items: center;
+		gap: 1rem;
+	}
+	.hero-section__text {
+		justify-self: center;
+		max-width: 25rem;
+	}
+	.hero-btns__container {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+	.hero-btns__container {
+		margin-right: 1rem;
+	}
+	.hero-section__image {
+		display: flex;
+	}
+	.hero-section__image img {
+		width: 100%;
+		height: 100%;
+		max-height: 80vh;
+		object-fit: cover;
+		border-radius: var(--theme-shape-radius);
+	}
+	@media (max-width: 768px) {
+		.hero-section__section {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>

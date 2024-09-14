@@ -1,0 +1,52 @@
+---
+import { Container, FeatureCard } from '@littlesticks/odyssey-theme-components';
+
+import Layout from '../layouts/Page.astro';
+import HomeHeroSection from '../components/sections/heros/HomeHeroSection.astro';
+---
+
+<Layout>
+	<HomeHeroSection />
+	<Container>
+		<section class="feature-card__section">
+			<h2>Services</h2>
+			<p>
+				Our portfolio comprises various data analysis approaches for all biological 
+				datasets (e.g. sequencing, drug screening, digital pathology and histochemistry). 
+				We cover all current sequencing platforms and types (e.g. bulk, single cell, 
+				multi-omics). Additionally, we provide custom workflows and software tailored 
+				to our client's needs, from answering basic and translational research questions 
+				to developing software for industrial use.
+				
+			</p>
+			<div class="feature-card__grid">
+				<FeatureCard href="/services/data" title="Bioinformatics" imgSrc="/assets/images/home/screenshots/data">
+				</FeatureCard>
+				<FeatureCard href="/services/biostatistics" title="Biostatistics" imgSrc="/assets/images/home/screenshots/biostatistics">
+				</FeatureCard>
+				<FeatureCard href="/services/machine" title="Machine learning" imgSrc="/assets/images/home/screenshots/machine-learning">
+				</FeatureCard>
+				<FeatureCard href="/services/software" title="Software creation" imgSrc="/assets/images/home/screenshots/software-creation">
+				</FeatureCard>
+
+			</div>
+		</section>
+	</Container>
+
+</Layout>
+
+<style>
+	.feature-card__section {
+		margin: var(--section-margin) auto;
+	}
+	.feature-card__grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: var(--theme-grid-gap);
+	}
+	@media (max-width: 768px) {
+		.feature-card__grid {
+			grid-template-columns: 1fr;
+		}
+	}
+</style>
